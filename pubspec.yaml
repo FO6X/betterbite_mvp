@@ -1,18 +1,23 @@
-import 'package:flutter/material.dart';
+name: betterbite_mvp
+description: BetterBite MVP - AI ingredient scanner
+publish_to: 'none'
+version: 1.0.0+1
 
-void main() => runApp(const BetterBiteApp());
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
 
-class BetterBiteApp extends StatelessWidget {
-  const BetterBiteApp({super.key});
+dependencies:
+  flutter:
+    sdk: flutter
+  google_mlkit_text_recognition: ^0.11.0
+  image_picker: ^1.0.4
+  provider: ^6.0.5
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'BetterBite MVP',
-      theme: ThemeData(primarySwatch: Colors.green),
-      home: const Scaffold(
-        body: Center(child: Text('BetterBite MVP — scanner coming next commit')),
-      ),
-    );
-  }
-}
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
